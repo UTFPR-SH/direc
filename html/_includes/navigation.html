@@ -1,0 +1,15 @@
+<nav class="navbar is-spaced has-text-weight-light" role="navigation">
+  <div class="container">
+    <a class="navbar-burger" data-target="nav-menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
+    <ul id="nav-menu" class="navbar-menu">
+      {% for link in site.navigation %}
+      <li><a href="{{ link.url }}" class="navbar-item">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

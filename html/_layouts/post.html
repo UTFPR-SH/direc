@@ -1,0 +1,79 @@
+---
+layout: default
+title: {{ page.title }}
+---
+
+<link rel="stylesheet" type="text/css" href="/assets/css/post.css">
+
+<section class="section container is-primary post-content">
+  <header id="header" class="post-header">
+    <div class="columns">
+      <div class="column">
+        <figure class="image is-96x96 has-text-centered">
+          <img src="{{ page.picture }}" alt="Foto do professor" class="post-figure">  
+        </figure>
+      </div>
+      <div class="column is-11" style="margin-top:auto;margin-bottom:auto;">
+        <p class="post-author" title="Professor coordenador">{{ page.professor }}</p>
+        <div class="is-pulled-right field is-grouped">
+          <div class="control">
+            <div class="tags has-addons">
+              <p class="tag is-dark">Início {{ page.data-inicio }}</p> 
+              <p class="tag is-danger">Fim {{ page.data-fim }}</p>
+            </div>
+          </div>
+        </div>
+        <small style="color: #dddddd">Professor coordenador</small><br><br>
+        <a href="mailto:{{ page.email }}" title="" class="button is-info"><i class="fas fa-envelope fa-fw"></i> Email</a>
+        <a href="{{ page.lattes }}" title="" class="button is-info"><i class="fas fa-address-card fa-fw"></i> Lattes</a>
+      </div>  
+    </div>
+    
+  </header>
+
+  <p class="title-large gap-medium-top">{{ page.title }}</p>
+
+  <div class="post-text">
+    {{ content }}
+
+
+    <div class=""> <!-- Fotos do projeto -->
+      <p class="title-large">Fotos do projeto</p>
+
+      {% if page.fotos %}
+      <div>
+
+      </div>
+      {% else %}
+      <div class="has-text-centered title-medium notification is-danger" style="padding: 10%">
+        Nenhuma foto disponível <br>
+        <i class="fas fa-camera fa-2x fa-fw"></i>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="post-actions gap-small-top">
+    {% assign status = page.status | downcase %}
+    {% if status == "em andamento" %}
+    <p class="title-large">Quer ser voluntário no projeto?</p>
+    <p class="text">Para ser voluntário no projeto basta ser aluno da UTFPR e ter interesse neste projeto. Escreva uma mensagem como indicada no campo da mensagem, esponha seu <u>nome</u>, <u>graduação</u>, <u>interesse no projeto</u> e, por fim, clique no botão de <strong>participar do projeto</strong> que o encaminhará para o envio do email.</p> 
+
+    <form action="mailto:{{ page.email }}?subject=" class="gap-small-top">
+      <div class="field">
+        <label class="label">Mensagem ao coordenador</label>
+        <div class="control">
+          <textarea class="input" name="body" placeholder="Olá, meu nome é Rafael Campos Nunes e sou discente de Ciência da Computação. O projeto destacado no título é do meu interesse, aguardo retorno para mais informações.
+
+Grato." style="height: 110px !important;min-height: 110px !important;min-width: 100%;"></textarea>
+        </div>
+      </div>
+      <input type="text" name="subject" value="Interesse no projeto {{ page.title }}" hidden>
+      <div class="control is-pulled-right">
+        <input type="submit" value="PARTICIPAR DO PROJETO" class="button is-success is-outlined">
+      </div>
+    </form>
+    {% else %}
+    {% endif %}
+  </div>
+</section>

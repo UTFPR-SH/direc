@@ -1,0 +1,208 @@
+---
+---
+
+// Include colors
+@import "colors"
+
+// For the sticky footer on the bottom
+section.container
+    min-height: calc(100vh - 30vh)
+
+footer#site-footer
+    margin-top: 30px
+    color: white
+    background: rgb(30, 30, 30)
+    
+
+footer#site-footer a 
+    color: rgb(200, 200, 200) !important
+    
+    -webkit-transition: all .1s ease-in
+    -moz-transition: all .1s ease-in
+    -o-transition: all .1s ease-in
+
+footer#site-footer a:hover
+    color: rgb(255, 255, 255) !important
+
+.navbar
+    margin-bottom: 20px
+    background: rgb(30, 30, 30) !important
+
+.navbar-item 
+    font-size: 22px
+    text-transform: uppercase
+    border-radius: 0 !important
+    color: rgb(200, 200, 200) !important
+
+    -webkit-transition: all .1s ease-in
+    -moz-transition: all .1s ease-in
+    -o-transition: all .1s ease-in
+
+.navbar-item:hover
+    background-color: transparent !important
+    color: rgb(255, 255, 255) !important
+
+.input, .button
+    -webkit-transition: all .1s ease-out
+    -moz-transition: all .1s ease-out
+    -o-transition: all .1s ease-out
+
+.input:active, textarea
+    box-shadow: none !important
+
+.input:focus
+    border: 1px solid rgb(30, 30, 30) !important
+
+// Elements of the theme
+
+p, ul
+    font-family: 'Open Sans', sans-serif
+    font-size: 17px
+    
+p.text
+    text-indent: 25px
+    margin-bottom: 2px
+    text-align: justify
+
+.title-small 
+    font-size: 15px
+    color: rgb(51, 51, 51)
+    margin-bottom: 3px !important
+    margin-top: 3px !important
+
+.title-medium
+    font-size: 20px
+    color: rgb(51, 51, 51)
+    margin-bottom: 5px !important
+    margin-top: 5px !important
+
+.title-large
+    font-size: 35px
+    color: rgb(51, 51, 51)
+    margin-bottom: 5px !important
+    margin-top: 5px !important
+
+.title 
+    font-size: 25px
+    color: rgb(51, 51, 51)
+    margin-bottom: 3px
+    margin-top: 3px
+
+.title-small-inverted
+    font-size: 15px
+    color: rgb(250, 250, 250)
+    margin-bottom: 3px !important
+    margin-top: 3px !important
+
+.title-medium-inverted
+    font-size: 20px
+    color: rgb(250, 250, 250)
+    margin-bottom: 5px !important
+    margin-top: 5px !important
+
+.title-large-inverted
+    font-size: 35px
+    color: rgb(250, 250, 250)
+    margin-bottom: 5px !important
+    margin-top: 5px !important
+
+.title-inverted
+    font-size: 25px
+    color: rgb(250, 250, 250)
+    margin-bottom: 3px
+    margin-top: 3px
+
+.gap-small-top
+    margin-top: 10px
+
+.gap-medium-top
+    margin-top: 30px
+
+.gap-large-top
+    margin-top: 50px
+
+.gap-small-bottom
+    margin-bottom: 10px
+
+.gap-medium-bottom
+    margin-bottom: 30px
+
+.has-text-bold
+    font-weight: bold
+
+.is-link 
+    cursor: pointer
+
+.scrollable-y
+    overflow-x: hidden
+    overflow-y: scroll
+
+.rainbow-red
+    background: linear-gradient(45deg, rgb(240, 0, 0), rgb(190, 0, 0)) !important
+
+.rainbow-blue
+    background: linear-gradient(45deg, rgb(0, 0, 220), rgb(20, 0, 220)) !important
+
+.rainbow-green
+    background: linear-gradient(to top right, rgb(20, 20, 20) 2%, #209cee) !important
+
+.tile-picture > img
+    border-radius: 3px
+
+.img-rounded
+    border-radius: 50%
+
+
+@media screen and (max-width: 1080px)
+    section 
+        padding: 2%
+
+    .navbar
+        background: rgb(255, 255, 255) !important
+    .navbar-item
+        color: rgb(30, 30, 30) !important
+
+    .navbar-item:hover
+        background: rgb(30, 30, 30) !important
+        color: rgb(255, 255, 255) !important 
+        border-bottom: 0 !important
+
+
+@media screen and (max-width: 600px) 
+    .title-computer,
+    .text-computer 
+        display: none
+
+    .title-mobile,
+    .text-mobile 
+        display: block
+
+
+@media screen and (min-width: 601px)
+    .title-mobile 
+        display: none
+
+// Carousel related style
+.carousel  
+    border-radius: 10px  
+
+.carousel .title  
+    color: white 
+    font-size: 20px !important 
+    background: rgba(230, 230, 230, .4) !important 
+ 
+.carousel-nav-left, .carousel-nav-right  
+    color: rgb(150, 150, 150) !important 
+    background: transparent !important 
+
+    -webkit-transition: all .1s ease-in 
+    -moz-transition: all .1s ease-in 
+    -o-transition: all .1s ease-in 
+
+.carousel-nav-left:hover, .carousel-nav-right:hover  
+    cursor: pointer 
+    color: rgb(20, 20, 20) !important 
+    background: transparent !important  
+
+// including bulma
+@import "bulma"
