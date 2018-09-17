@@ -7,3 +7,6 @@ all:
 
 regenerative:
 	jekyll build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+
+serve:
+	jekyll serve build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
