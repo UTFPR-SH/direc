@@ -42,16 +42,21 @@ footer#site-footer a:hover
     background-color: transparent !important
     color: rgb(255, 255, 255) !important
 
-.input, .button
+.input, .button, textarea
     -webkit-transition: all .1s ease-out
     -moz-transition: all .1s ease-out
     -o-transition: all .1s ease-out
 
+.input
+    box-shadow: 0 0 0 4px transparent !important
+
 .input:active, textarea
-    box-shadow: none !important
 
 .input:focus
-    border: 1px solid rgb(30, 30, 30) !important
+    border: 1px solid $grey !important
+    box-shadow: 0 0 0 4px $white-ter !important
+
+
 
 // Elements of the theme
 
@@ -137,20 +142,22 @@ p.text
     overflow-x: hidden
     overflow-y: scroll
 
-.rainbow-red
-    background: linear-gradient(45deg, rgb(240, 0, 0), rgb(190, 0, 0)) !important
-
-.rainbow-blue
-    background: linear-gradient(45deg, rgb(0, 0, 220), rgb(20, 0, 220)) !important
-
-.rainbow-green
-    background: linear-gradient(to top right, rgb(20, 20, 20) 2%, #209cee) !important
+.rainbow-black
+    background: linear-gradient(45deg, rgb(30, 30, 30), rgb(50, 50, 50)) !important
 
 .tile-picture > img
     border-radius: 3px
 
 .img-rounded
     border-radius: 50%
+
+.relief
+    -webkit-transition: all .1s ease-in 
+    -moz-transition: all .1s ease-in 
+    -o-transition: all .1s ease-in 
+
+.relief:hover
+    box-shadow: 0 0 3px 2px $grey-lighter
 
 
 @media screen and (max-width: 1080px)
