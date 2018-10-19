@@ -14,3 +14,29 @@
     border: 3px solid rgb(204, 204, 204);
     border-radius: 3px;
 }
+
+.post-photo-wall {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.post-photo-wall > li {
+	margin: 10px;
+}
+
+.post-photo-wall > li > figure img {
+	border-radius: 3px;
+	max-width: 450px;
+	max-height: 450px;
+	
+	-webkit-transition: all .1s;
+       -moz-transition: all .1s;
+    	 -o-transition: all .1s;
+}
+
+.post-photo-wall > li > figure img:hover {
+	box-shadow: 0 0 10px 0px rgba(30, 30, 30, .4);
+}
