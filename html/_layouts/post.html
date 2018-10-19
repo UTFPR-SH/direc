@@ -42,7 +42,13 @@ title: {{ page.title }}
 
       {% if page.fotos %}
       <div>
-
+        <ul class="post-photo-wall">
+        {% for foto in page.fotos %}
+           <li><figure class="">
+              <a href="{{ foto }}"><img src="{{ foto }}" class=""></a>
+            </figure></li>
+        {% endfor %}
+        </ul>
       </div>
       {% else %}
       <div class="has-text-centered title-medium notification is-danger" style="padding: 10%">
