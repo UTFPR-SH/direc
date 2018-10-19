@@ -12,3 +12,7 @@ Este website faz parte de um plano de integração do fluxo de informação gera
 na instituição para discentes e comunidade externa. Futuramente utilizará o 
 servidor e um banco de dados para estruturar as informações, além de adotar um
 sistema de autenticação para os usuários do setor alimentar o site com informações.
+
+
+:wink:
+:blush:
