@@ -30,3 +30,7 @@
 	margin-left: 7px;
 	margin-right: 7px;
 }
+
+.tile {
+	align-items: center;
+}
