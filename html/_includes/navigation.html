@@ -1,10 +1,14 @@
 <nav class="navbar is-spaced has-text-weight-light" role="navigation">
   <div class="container">
-    <a class="navbar-burger" data-target="nav-menu">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+    <div class="navbar-brand">
+      <img class="navbar-item" src="/assets/img/logos/direc.png" width="164" height="41">
+
+      <a role="button" class="navbar-burger" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
     <ul id="nav-menu" class="navbar-menu">
       {% for link in site.navigation %}
@@ -12,7 +16,7 @@
       {% endfor %}
 
       <div class="navbar-end">
-        <li><a href="#" class="button is-info" disabled>LOGIN</a></li>
+        <li><a href="login.html" class="button is-info">LOGIN</a></li>
       </div>
     </ul>
   </div>
