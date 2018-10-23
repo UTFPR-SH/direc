@@ -31,6 +31,6 @@
 	margin-right: 7px;
 }
 
-.tile {
-	align-items: center;
+.centralized-images {
+	justify-content: center;
 }
