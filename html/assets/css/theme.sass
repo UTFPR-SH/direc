@@ -24,6 +24,8 @@ footer#site-footer a
 footer#site-footer a:hover
     color: rgb(255, 255, 255) !important
 
+// Overriding some Bulma stylesheet
+
 .navbar
     margin-bottom: 20px
     background: rgb(30, 30, 30) !important
@@ -56,7 +58,9 @@ footer#site-footer a:hover
     border: 1px solid $grey !important
     box-shadow: 0 0 0 4px $white-ter !important
 
-
+@media screen and (min-width: 1088px)
+    .navbar > .container .navbar-menu, .container > .navbar .navbar-menu
+        margin-right: 0 !important
 
 // Elements of the theme
 
@@ -159,8 +163,11 @@ p.text
 .relief:hover
     box-shadow: 0 0 3px 2px $grey-lighter
 
+.has-image-center
+    justify-content: center
 
-@media screen and (max-width: 1080px)
+
+@media screen and (max-width: 1088px)
     section 
         padding: 2%
 
