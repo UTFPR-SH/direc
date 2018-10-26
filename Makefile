@@ -1,12 +1,17 @@
 INPUT_FOLDER=./html
 OUTPUT_FOLDER=./html/_site
+DOCKER ?= OFF # If set to ON jekyll container is used to build and serve
+JEKYLL = jekyll
 
+ifeq (${DOCKER},ON)
+	JEKYLL = docker run --network=host -v "$(shell pwd)":/srv/jekyll jekyll/jekyll jekyll
+endif
 
 all:
-	jekyll build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER)
+	$(JEKYLL) build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER)
 
 regenerative:
-	jekyll build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+	$(JEKYLL) build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
 
 serve:
-	jekyll serve build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+	$(JEKYLL) serve build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
