@@ -1,0 +1,44 @@
+---
+layout: default
+title: login
+---
+
+<style type="text/css">
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-login {
+	padding: 2%;
+	border-radius: 3px;
+	background: rgb(250, 250, 250);
+}
+</style>
+
+<div class="form-login">
+	<b>Login para administradores do sistema</b><br><br>
+
+	<form class="form has-text-right">
+		<div class="field">
+			<p class="control has-icons-left">
+				<input class="input" type="text" placeholder="Usuário">
+				<span class="icon is-small is-left">
+					<i class="fas fa-user"></i>
+				</span>
+			</p>
+		</div>
+
+		<div class="field">
+			<p class="control has-icons-left">
+				<input class="input" type="password" placeholder="Senha">
+				<span class="icon is-small is-left">
+					<i class="fas fa-lock"></i>
+				</span>
+			</p>
+		</div>
+
+		<input class="button is-success" type="submit" name="button-entry" value="Entrar">
+	</form>
+</div>
