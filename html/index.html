@@ -124,29 +124,29 @@ title: Início
         <p class="title-large">AÇÕES DE EXTENSÃO</p>
         <p class="text">A Universidade se engaja em várias ações de extensão na comunidade em que está inserida. Clicando no título do evento você poderá ver mais informações deste.</p>
 
-        <div>
-          <div class="carousel carousel-animated carousel-animate-slide" data-autoplay="true" data-delay="3500">
-            <div class="carousel-container" id="carousel-events">
+        <div class="carousel-center">
+          <div class="carousel carousel-animated carousel-animate-slide" id="carousel-events" data-autoplay="true" data-delay="3500">
+            <div class="carousel-container">
               {% assign posts_number = site.posts.size %}
               {% for i in (0..posts_number) %}
               {% if forloop.last %}
                   {% break %}
               {% endif %}
               {% if site.posts[i].tag == "evento" and i == 0 %}
-              <div class="carousel-item has-background is-active">
-                <img src="" class="is-background">
-                <a href="{{ site.posts[i].url }}" class="title">
-                  {{ site.posts[i].title }}
-                </a>
-              </div>
+              <a href="{{ site.posts[i].url }}" class="carousel-item has-background is-active carousel-events">
+                <img src="{{ site.posts[i].cover }}" class="is-background">
+                <p class="title">
+                 {{ site.posts[i].title }}
+                </p>
+              </a>
               {% else-if i > 0 %}
               {% if site.posts[i].tag == "evento" %}
-              <div class="carousel-item has-background">
-                <img src="" class="is-background">
-                <a href="{{ site.posts[i].url }}" class="title">
+              <a href="{{ site.posts[i].url }}" class="carousel-item has-background is-active carousel-events">
+                <img src="{{ site.posts[i].cover }}" class="is-background">
+                <p class="title">
                   {{ site.posts[i].title }}
-                </a>
-              </div>
+                </p>
+              </a>
               {% endif %}
               {% endif %}
               {% endfor %}
@@ -164,40 +164,5 @@ title: Início
         </div>
       </div>
     </div>
-
-    <!-- <p class="title-large title-computer">Diretoria de Relações Empresariais e Comunitárias</p>
-    <div class="has-text-centered title-mobile">
-      <p class="title-large">DIREC</p>
-    </div>
-
-    <p class="text">
-      A Diretoria de Relações Empresariais e Comunitárias promove e fortalece a interação entre a Instituição, as empresas e a comunidade, atendendo as demandas da sociedade e contribuindo para o aprimoramento das atividades de ensino e pesquisa, atuando diretamente nas seguintes atividades:
-    </p>
-
-    <ul>
-      <li>Interação local e regional</li>
-      <li>Capacitação de profissionais</li>
-      <li>Desenvolvimento de projetos e serviços tecnológicos</li>
-      <li>Coordenação e supervisão das atividades de transferência de tecnologia</li>
-      <li>Viabilização de iniciativas empreendedoras</li>
-      <li>Intercâmbios internacionais e projetos de ação social</li>
-      <li>Convênios institucionais e empresariais</li>
-      <li>Formação de parcerias</li>
-      <li>Eventos sociais, culturais e desportivos</li>
-      <li>Conselho Empresarial</li>
-      <li>Agenciamento de estágios e empregos</li>
-      <li>Programa de Egressos.</li>
-    </ul>
-
-    <p>Objetivos da área de Relações Empresariais e Comunitárias:</p>
-
-    <ul>
-      <li>
-        Promover a organização, o apoio e a supervisão das atividades de extensão, do ensino e da pesquisa, em atendimento às demandas da comunidade, notadamente do segmento empresarial.
-      </li>
-      <li>Integrar conhecimentos, necessidades e resultados.</li>
-      <li>Transformar conhecimentos em soluções de mercado.</li>
-      <li>Viabilizar recursos, buscar tecnologias e torná-las acessíveis.</li>
-    </ul> -->
   </div>
 </div>
