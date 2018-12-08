@@ -2,10 +2,12 @@
 
 // Array of modals available
 let M = ['modal-bolsista', 'modal-voluntario', 'modal-extensao']
+var modal
 
 M.map((m) => {
 	document.getElementById(m).onclick = event => {
-		document.getElementById('m' + m).classList.add("is-active")
+        modal = document.getElementById('m' + m)
+		modal.classList.add("is-active")
 	}
 })
 
@@ -16,5 +18,12 @@ for (var i = 0; i < dbutton.length; i++) {
         M.forEach((e) => {
             document.getElementById('m' + e).classList.remove('is-active')
         })
+    }
+}
+
+window.onclick = (event) => {
+    let background = modal.querySelector('.modal-background')
+    if(event.target == background) {
+        modal.classList.remove('is-active')
     }
 }
