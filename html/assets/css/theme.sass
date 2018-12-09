@@ -24,15 +24,17 @@ footer#site-footer a
 footer#site-footer a:hover
     color: rgb(255, 255, 255) !important
 
+// Overriding some Bulma stylesheet
+
 .navbar
     margin-bottom: 20px
     background: rgb(30, 30, 30) !important
 
 .navbar-item 
-    font-size: 22px
+    font-size: 24px
     text-transform: uppercase
     border-radius: 0 !important
-    color: rgb(200, 200, 200) !important
+    color: rgb(180, 180, 180) !important
 
     -webkit-transition: all .1s ease-in
     -moz-transition: all .1s ease-in
@@ -42,6 +44,9 @@ footer#site-footer a:hover
     background-color: transparent !important
     color: rgb(255, 255, 255) !important
 
+.navbar-brand > a#logo
+    cursor: default
+
 .input, .button, textarea
     -webkit-transition: all .1s ease-out
     -moz-transition: all .1s ease-out
@@ -50,13 +55,16 @@ footer#site-footer a:hover
 .input
     box-shadow: 0 0 0 4px transparent !important
 
-.input:active, textarea
-
 .input:focus
     border: 1px solid $grey !important
-    box-shadow: 0 0 0 4px $white-ter !important
+    box-shadow: 0 0 0 4px $white-cle !important
 
+@media screen and (min-width: 1088px)
+    .navbar > .container .navbar-menu, .container > .navbar .navbar-menu
+        margin-right: 0 !important
 
+.buttons
+    justify-content: center !important
 
 // Elements of the theme
 
@@ -68,6 +76,16 @@ p.text
     text-indent: 25px
     margin-bottom: 2px
     text-align: justify
+
+p > a 
+    text-decoration-line: none !important
+    color: rgb(10, 30, 200) !important
+    -webkit-transition: all .1s ease-out
+    -moz-transition: all .1s ease-out
+    -o-transition: all .1s ease-out
+
+p > a:hover 
+    color: rgb(10, 30, 250) !important
 
 .title-small 
     font-size: 15px
@@ -118,19 +136,19 @@ p.text
     margin-top: 3px
 
 .gap-small-top
-    margin-top: 10px
+    margin-top: 10px !important
 
 .gap-medium-top
-    margin-top: 30px
+    margin-top: 30px !important
 
 .gap-large-top
-    margin-top: 50px
+    margin-top: 50px !important
 
 .gap-small-bottom
-    margin-bottom: 10px
+    margin-bottom: 10px !important
 
 .gap-medium-bottom
-    margin-bottom: 30px
+    margin-bottom: 30px !important
 
 .has-text-bold
     font-weight: bold
@@ -159,8 +177,11 @@ p.text
 .relief:hover
     box-shadow: 0 0 3px 2px $grey-lighter
 
+.has-image-center
+    justify-content: center
 
-@media screen and (max-width: 1080px)
+
+@media screen and (max-width: 1088px)
     section 
         padding: 2%
 
@@ -210,6 +231,22 @@ p.text
     cursor: pointer 
     color: rgb(20, 20, 20) !important 
     background: transparent !important  
+
+
+// Adds some animation to the modl entry
+@keyframes fade-in 
+    from 
+        opacity: 0
+    to 
+        opacity: 1
+    
+.is-active
+    animation-name: fade-in
+    animation-duration: .3s
+
+section
+    animation-name: fade-in
+    animation-duration: .5s
 
 // including bulma
 @import "bulma"

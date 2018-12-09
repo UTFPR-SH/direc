@@ -1,0 +1,55 @@
+---
+layout: default
+title: Login
+---
+
+<script type="text/javascript" src="/assets/js/fake_auth.js"></script>
+
+<style type="text/css">
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-login {
+	padding: 2%;
+	border-radius: 3px;
+	background: rgb(247, 247, 247);
+}
+</style>
+
+<div class="form-login">
+	<b>Login para administradores do sistema</b><br><br>
+
+	<form class="form has-text-right" method="post" id="form-login">
+		<div class="field">
+			<p class="control has-icons-left">
+				<input class="input" type="text" placeholder="Usuário" name="username" required>
+				<span class="icon is-small is-left">
+					<i class="fas fa-user"></i>
+				</span>
+			</p>
+		</div>
+
+		<div class="field">
+			<p class="control has-icons-left">
+				<input class="input" type="password" placeholder="Senha" name="password" required>
+				<span class="icon is-small is-left">
+					<i class="fas fa-lock"></i>
+				</span>
+			</p>
+		</div>
+
+		<div class="field" id="error-message" hidden>
+			<label class="has-text-danger control">Usuário ou senha incorretos</label>
+		</div>
+	</form>
+
+	<!-- Button placed outside the form for while to not dispatch any event of the form -->
+	<div class="has-text-right gap-small-top">
+		<button class="button is-success" name="button-login">
+			<span style="margin-right: 5px;" id="spin" hidden><i class="fa fas fa-circle-notch fa-spin"></i></span>Entrar
+		</button>
+	</div>
+</div>

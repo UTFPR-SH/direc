@@ -82,7 +82,7 @@ title: DEPEX
           <p class="title-large has-border-bottom">Projetos de Extensão</p>
         </div>
         <div class="depex-posts-content">
-          <ul style="height: 700px;" data-simplebar data-simplebar-auto-hide="true">
+          <ul style="height: 700px;" data-simplebar data-simplebar-auto-hide="false">
             {% for element in site.posts %}
             {% if element.tag != "evento" %}
             <li>
@@ -112,7 +112,7 @@ title: DEPEX
                           {% endif %}
                         </div>
                       </div>
-                      <span class="has-text-grey" id="post-resume-title">Resumo do projeto</span>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
                       <p class="has-text-justified" id="post-resume">{{ element.snippet }}</p>
                     </div>
                     <nav class="navbar is-mobile">
