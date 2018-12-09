@@ -31,7 +31,7 @@ footer#site-footer a:hover
     background: rgb(30, 30, 30) !important
 
 .navbar-item 
-    font-size: 22px
+    font-size: 24px
     text-transform: uppercase
     border-radius: 0 !important
     color: rgb(180, 180, 180) !important
@@ -55,15 +55,16 @@ footer#site-footer a:hover
 .input
     box-shadow: 0 0 0 4px transparent !important
 
-.input:active, textarea
-
 .input:focus
     border: 1px solid $grey !important
-    box-shadow: 0 0 0 4px $white-ter !important
+    box-shadow: 0 0 0 4px $white-cle !important
 
 @media screen and (min-width: 1088px)
     .navbar > .container .navbar-menu, .container > .navbar .navbar-menu
         margin-right: 0 !important
+
+.buttons
+    justify-content: center !important
 
 // Elements of the theme
 
@@ -135,19 +136,19 @@ p > a:hover
     margin-top: 3px
 
 .gap-small-top
-    margin-top: 10px
+    margin-top: 10px !important
 
 .gap-medium-top
-    margin-top: 30px
+    margin-top: 30px !important
 
 .gap-large-top
-    margin-top: 50px
+    margin-top: 50px !important
 
 .gap-small-bottom
-    margin-bottom: 10px
+    margin-bottom: 10px !important
 
 .gap-medium-bottom
-    margin-bottom: 30px
+    margin-bottom: 30px !important
 
 .has-text-bold
     font-weight: bold
@@ -230,6 +231,22 @@ p > a:hover
     cursor: pointer 
     color: rgb(20, 20, 20) !important 
     background: transparent !important  
+
+
+// Adds some animation to the modl entry
+@keyframes fade-in 
+    from 
+        opacity: 0
+    to 
+        opacity: 1
+    
+.is-active
+    animation-name: fade-in
+    animation-duration: .3s
+
+section
+    animation-name: fade-in
+    animation-duration: .5s
 
 // including bulma
 @import "bulma"
