@@ -1,0 +1,52 @@
+.list {
+	padding-top: 1%;
+	padding-left: 2%;
+	list-style: disc;
+}
+
+.box-round {
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.faq-block > p {
+	margin-bottom: 3px;
+}
+
+.faq-block > .question::first-letter {
+	color: red;
+}
+
+.faq-block > .answer::first-letter {
+	color: blue;
+}
+
+#student {
+    background: rgb(245, 245, 245);
+}
+
+#company {
+    background: rgb(245, 245, 245);
+}
+
+
+#faq > div > ul {
+	padding-left: 20px;
+}
+
+#faq > div > ul > li {
+	padding: 1%;
+	margin: 5px;
+	color: white;
+	cursor: pointer;
+	border-radius: 3px;
+	background: rgba(0, 209, 162, .7);
+
+	-webkit-transition: all .1s ease-in;
+       -moz-transition: all .1s ease-in;
+         -o-transition: all .1s ease-in;
+}
+
+#faq > div > ul > li:hover {
+	background: rgba(0, 209, 162, 1);
+}
