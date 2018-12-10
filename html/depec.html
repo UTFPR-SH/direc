@@ -7,12 +7,14 @@ title: DEPEC
 <link rel="stylesheet" type="text/css" href="/assets/css/bulma-carousel.min.css">
 <link rel="stylesheet" type="text/css" href="/assets/css/bulma-timeline.css">
 
-<script type="text/javascript" src="/assets/js/depec_modals.js" charset="utf-8" async defer></script>
+<script type="text/javascript" src="/assets/js/modals.js" charset="utf-8" async defer></script>
 <script type="text/javascript" src="/assets/js/bulma-carousel.js" charset="utf-8" async defer></script>
 
 <script type="text/javascript">
-	window.onload = () => {
-		var carousels = bulmaCarousel.attach()
+	window.onload = (event) => {
+		// var carousels = bulmaCarousel.attach() // TODO: bulmaCarousel is not defined
+		bindModals(['pa1', 'pa2', 'pa3', 'pa4', 'pa5', 'pa6', 'pa7', 'pa8', 'pa9', 
+		 'pa10', 'pe1', 'pe2', 'pe3', 'pe4',  'pe5', 'pe6', 'pe7', 'pe8'])
 	}
 </script>
 
