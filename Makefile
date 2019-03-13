@@ -13,5 +13,8 @@ all:
 regenerative:
 	$(JEKYLL) build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
 
+deploy:
+	$(JEKYLL) serve --host=0.0.0.0 build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+
 serve:
 	$(JEKYLL) serve build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
