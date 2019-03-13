@@ -3,7 +3,12 @@ layout: default
 title: DEPET
 ---
 
-<script src="/assets/js/depet_modals.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="/assets/js/modals.js" type="text/javascript" charset="utf-8" async defer></script>
+<script type="text/javascript" async>
+  window.onload = (event) => {
+    bindModals(['modal-nit', 'modal-proem', 'modal-consultorias'])
+  }
+</script>
 
 {% include depet_modals.html %}
 

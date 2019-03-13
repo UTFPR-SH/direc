@@ -5,7 +5,12 @@ title: DEPEX
 
 <link rel="stylesheet" type="text/css" href="/assets/css/depex.css">
 
-<script src="/assets/js/depex_modals.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="/assets/js/modals.js" type="text/javascript" charset="utf-8" async defer></script>
+<script type="text/javascript" async>
+  window.onload = (event) => {
+    bindModals(['modal-bolsista', 'modal-voluntario', 'modal-extensao'])
+  }
+</script>
 
 {% include depex_modals.html %}
 
