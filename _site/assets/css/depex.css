@@ -1,0 +1,38 @@
+ .depex-posts {
+ 	padding: 10px;
+ 	border: 1px solid rgb(192, 192, 192);
+ 	border-radius: 3px;
+ }
+
+ .depex-posts .navbar {
+ 	background: transparent !important;
+ }
+
+ .depex-posts li {
+ 	margin-top: 15px;
+ }
+
+ #post-resume {
+ 	text-indent: 25px;
+ }
+
+ #post-picture {
+ 	border-radius: 3px;
+ 	border: 3px solid rgba(100, 100, 100, .2);
+ }
+
+@media screen and (max-width: 1100px) {
+	#depex-posts {
+		padding: 1%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#post-tag > *, #post-tag {
+		display: none;
+	}
+
+	#post-resume, #post-resume-title {
+		display: none;
+	}
+}

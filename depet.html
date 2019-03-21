@@ -1,0 +1,86 @@
+---
+layout: default
+title: DEPET
+---
+
+<script src="/assets/js/modals.js" type="text/javascript" charset="utf-8" async defer></script>
+<script type="text/javascript" async>
+  window.onload = (event) => {
+    bindModals(['modal-nit', 'modal-proem', 'modal-consultorias'])
+  }
+</script>
+
+{% include depet_modals.html %}
+
+<div class="columns">
+  <div class="column">
+    <p class="title-large title-computer">DEPET - Departamento de Apoio e Projetos Tecnológicos </p>
+    <div class="has-text-centered title-mobile">
+      <p class="title-large">DEPET</p>
+    </div>
+
+    <p class="text">
+      Este departamento tem como objetivo promover a melhoria e a inovação de processos e produtos por meio de conhecimentos tecnológicos existentes na gestão de transferência de tecnologia.
+    </p>
+    <p class="text">
+      Por meio do departamento, é possível realizar serviços de consultoria, pesquisa cooperativa, serviços laboratoriais e cursos de extensão para a comunidade e para empresas. A partir de uma necessidade é possível consultar o departamento para uma possível solução ou orientação do melhor caminho para a resolução do problema.
+    </p>
+  </div>
+</div>
+
+<strong class="gap-medium-top">Clique nos balões abaixo para obter maiores informações.</strong>
+
+<div class="tile is-ancestor gap-small-top">
+  <div class="tile is-vertical">
+    <div class="tile">
+      <div class="tile is-parent">
+        <div id="modal-nit" class="tile is-child notification rainbow-black is-link">
+          <div class="content">
+            <p class="title">NIT</p>  
+            <p>Núcleo de Inovações Tecnológicas</p>
+          </div>  
+        </div>  
+      </div>
+      <div class="tile is-parent">
+        <div id="modal-proem" class="tile is-child notification rainbow-black is-link">
+          <div class="content">
+            <p class="title">PROEM</p>  
+            <p>Programa de Empreendedorismo</p>
+          </div>  
+        </div>  
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div id="modal-consultorias" class="tile is-child notification rainbow-black is-link">
+        <div class="content">
+          <p class="title">Consultorias e Projetos Tecnológicos</p>  
+          <p>Conte conosco para sua parceria em consultorias ou inovação tecnológica</p>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div class="">
+  <p class="title-large">Hotel Tecnológico</p>
+
+  <p class="text">O que é o hotel tecnológico?</p>
+
+  <div class="tile is-ancestor">
+    <div class="tile is-parent has-image-center">
+      <figure class="tile-picture image is-256x256">
+        <img src="https://bulma.io/images/placeholders/256x256.png">
+      </figure>
+    </div>
+    <div class="tile is-parent has-image-center">
+      <figure class="tile-picture image is-256x256">
+        <img src="https://bulma.io/images/placeholders/256x256.png">
+      </figure>
+    </div>
+    <div class="tile is-parent has-image-center">
+      <figure class="tile-picture image is-256x256">
+        <img src="https://bulma.io/images/placeholders/256x256.png">
+      </figure>
+    </div>
+  </div>
+</div>

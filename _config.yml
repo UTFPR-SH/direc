@@ -1,0 +1,29 @@
+navigation:
+- text: início
+  url: /index
+- text: depex
+  url: /depex
+- text: depet
+  url: /depet
+- text: depec
+  url: /depec
+- text: derint
+  url: /derint
+- text: oportunidades
+  url: /oportunities
+
+navinternal:
+- text: início
+  url: /internal
+- text: extensão
+  url: /internal/extension
+- text: eventos
+  url: /internal/events
+- text: usuários
+  url: /internal/users
+- text: ajuda
+  url: /internal/help
+
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,0 +1,281 @@
+--- 
+layout: default 
+title: DEPEC 
+---
+
+<link rel="stylesheet" type="text/css" href="/assets/css/depec.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bulma-carousel.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/bulma-timeline.css">
+
+<script type="text/javascript" src="/assets/js/modals.js" charset="utf-8" async defer></script>
+<script type="text/javascript" src="/assets/js/bulma-carousel.js" charset="utf-8" async defer></script>
+
+<script type="text/javascript" async>
+	window.onload = (event) => {
+		// var carousels = bulmaCarousel.attach() // TODO: bulmaCarousel is not defined
+		bindModals(['pa1', 'pa2', 'pa3', 'pa4', 'pa5', 'pa6', 'pa7', 'pa8', 'pa9', 
+		 'pa10', 'pe1', 'pe2', 'pe3', 'pe4',  'pe5', 'pe6', 'pe7', 'pe8'])
+	}
+</script>
+
+{% include depec_modals.html %}
+
+<div class="columns">
+	<div class="column">
+		<p class="title-large title-computer">DEPEC - Departamento de Estágio</p>
+		<div class="has-text-centered title-mobile">
+			<p class="title-large">DEPEC</p>
+		</div>
+	</div>
+</div>
+
+<div id="internship">
+	<p class="title-large">O ESTÁGIO</p>
+
+	<div class="columns">
+		<div class="column">
+			<p class="text">
+				O estágio é uma atividade curricular supervisionada, desenvolvida em ambiente de trabalho, que propicia ao estudante vivenciar em situação real, o exercício da profissão futura. Há duas categorias distintas de estágio, você as visualiza abaixo.
+			</p>
+
+			<ul class="list">
+				<li>
+					<b>Estágio obrigatório</b> é o estágio previsto na grade curricular, cuja carga horária é requisito para conclusão do curso.
+				</li>
+				<li>
+					<b>Estágio não obrigatório</b> é aquele desenvolvido como atividade opcional, constitui-se em atividade de complementação à formação acadêmica coerente com o perfil profissional.
+				</li>
+			</ul>
+
+			<div class="columns gap-small-top">
+				<div id="student" class="column box-round">
+					<p class="title">PARA O ALUNO</p>
+
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<div class="timeline is-centered gap-large-top">
+						<header class="timeline-header">
+							<span class="tag is-medium is-primary">Início</span>
+						</header>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>1</b></div>
+							<div class="timeline-content">
+								<p class="heading">primeiro passo</p>
+								<p>Acesse o SIE por este <a href="https://estagio.utfpr.edu.br" target="blank">link</a>.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>2</b></div>
+							<div class="timeline-content">
+								<p class="heading">segundo passo</p>
+								<p>Selecionar o câmpus que deseja cadastrar. Clique em <b>Santa Helena</b> e logue no sistema.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>3</b></div>
+							<div class="timeline-content">
+								<p class="heading">terceiro passo</p>
+								<p>A esquerda da página ao fundo azul, no item <b>login</b>, localize o link <b>aluno</b> e clique neste.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>4</b></div>
+							<div class="timeline-content">
+								<p class="heading">quarto passo</p>
+								<p>No primeiro acesso é necessário realizar o cadastro observando o canto superior direito do formulário onde indica: <b>Para acessar é necessário cadastrar-se clique aqui...</b>. Dê as informações necessárias para o cadastro e nas próximas vezes é só entrar no sistema com esse login e senha.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>5</b></div>
+							<div class="timeline-content">
+								<p class="heading">quinto passo</p>
+								<p>O DEPEC analisa o cadastro e libera acesso do aluno ao Sistema Integrado de Estágio. É importante ressaltar que os alunos matriculados no 2º período precisam encaminhar declaração de matrícula ao departamento.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>6</b></div>
+							<div class="timeline-content">
+								<p class="heading">último passo</p>
+								<p>Parabéns, você é um aluno credenciado. A partir desse momento você pode procurar mais orientações no setor de estágio que se localiza no bloco F4.</p>
+							</div>
+						</div>
+						<div class="timeline-header">
+							<span class="tag is-medium is-primary">Fim</span>
+						</div>
+					</div>
+				</div>
+
+				<div id="company" class="column box-round">
+					<p class="title">PARA A EMPRESA</p>
+
+					<p class="text">Se você é uma empresa cadastrada no sistema SIE (Sistema Integrado de Estágio) você pode pular para o passo 3, caso contrário inicie do passo 1.</p>
+					<p class="text">Para se credenciar e, dessa forma, oferecer vagas de estágio para alunos da UTFPR basta seguir os passos abaixo.</p>
+
+					<div class="timeline is-centered gap-large-top">
+						<header class="timeline-header">
+							<span class="tag is-medium is-primary">Início</span>
+						</header>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>1</b></div>
+							<div class="timeline-content">
+								<p class="heading">primeiro passo</p>
+								<p>Acesse o SIE por este <a href="https://estagio.utfpr.edu.br" target="blank">link</a>.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>2</b></div>
+							<div class="timeline-content">
+								<p class="heading">segundo passo</p>
+								<p>Selecionar o câmpus que deseja cadastrar. Clique em <b>Santa Helena</b> e logue no sistema.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>3</b></div>
+							<div class="timeline-content">
+								<p class="heading">terceiro passo</p>
+								<p>A esquerda da página ao fundo azul, no item <b>login</b>, localize o link <b>empresa</b> e clique neste.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>4</b></div>
+							<div class="timeline-content">
+								<p class="heading">quarto passo</p>
+								<p>Na primeira vez é necessário realizar o Cadastro em <b>Para acessar é necessário cadastrar-se. clique aqui...</b>. Preencha as informações necessárias para o cadastro da empresa. Nas próximas vezes é só entrar no sistema, campus cadastrado com esse login e senha.</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-marker is-icon"><b>5</b></div>
+							<div class="timeline-content">
+								<p class="heading">último passo</p>
+								<p>Após o cadastro um de nossos professores do curso de interesse (Ciências Biológicas, Ciência da Computação ou Agronomia) realizará uma visita na empresa para assim, podermos liberar o cadastro e documentos para estágio.</p>
+							</div>
+						</div>
+						<div class="timeline-header">
+							<span class="tag is-medium is-primary">Fim</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="faq">
+		<p class="title-large">PERGUNTAS FREQUENTES (FAQ)</p>
+		<div class="columns" id="faq">
+			<div class="column">
+				<p class="text">Você aluno pode estar com várias questões após verificar, detalhadamente, as informações acima. Talvez você possa estar com alguma das seguintes perguntas. Caso contrário nos procure no bloco F4 que estaremos à disposição.</p>
+				<ul class="" style="padding: 20px;">
+					<li id="pa1">Sou obrigado a inserir todas as informações solicitadas no cadastro? Por que?</li>
+					<li id="pa2">O que é um Agente Integrador?</li>
+					<li id="pa3">Como posso conseguir uma vaga de estágio?</li>
+					<li id="pa4">Estou matriculado no 2º período letivo, posso fazer estágio?</li>
+					<li id="pa5">Quantas horas de estágio posso fazer por semana?</li>
+					<li id="pa6">Posso fazer estágio em qualquer período do dia?</li>
+					<li id="pa7">O que devo fazer para rescindir Termo de Compromisso de Estágio? </li>
+					<li id="pa8">Aonde devo levar meus Relatórios Parciais de Estágio?</li>
+					<li id="pa9">O que é o PRAE?</li>
+					<li id="pa10">Onde posso conseguir mais informações?</li>
+				</ul>
+			</div>
+			<div class="column">
+				<p class="text">Como instituição parceira da UTFPR algumas dúvidas podem surgir. Elas foram colocadas abaixo para facilitar mais ainda o processo de convênio. Pedimos que caso haja alguma outra dúvida entre em contato com o departamento de estágio.</p>
+				<ul class="" style="padding: 20px;">
+					<li id="pe1">
+						Como empresa, preciso contratar um agente integrador para intermediar o processo de contratação de um estagiário?
+					</li>
+					<li id="pe2">Como posso divulgar as vagas de estágio que tenho disponível?</li>
+					<li id="pe3">Quanto tempo posso manter um estagiário no meu quadro de pessoal?</li>
+					<li id="pe4">Preciso remunerar o estagiário? Seguro de vida e auxílio transporte?</li>
+					<li id="pe5">O estagiário tem direito a férias?</li>
+					<li id="pe6">Se houver alteração de supervisor, horário do estágio, ou interesse de prorrogar a vigência do estágio, o que deve ser feito?</li>
+					<li id="pe7">O que devo fazer para encerrar Termo de Compromisso de Estágio antes da data prevista?</li>
+					<li id="pe8">Onde posso conseguir mais informações sobre estágios para acadêmicos da UTFPR?</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="integration-agent">
+	<p class="title-large">AGENTES DE INTEGRAÇÃO</p>
+
+	<div class="carousel carousel-animated carousel-animate-slide" data-size="3" data-autoplay="true" data-delay="2500">
+		<div class="carousel-container has-text-centered">
+			<div class="carousel-item is-active carousel-link">
+				Agência De Integração Empresa Escola Ltda
+			</div>
+			<div class="carousel-item carousel-link">
+				Inova - Consultoria, Capacitação E Integração S/S Ltda Me.
+			</div>
+			<div class="carousel-item carousel-link">
+				Instituto Coroados De Aprendizagem E Estágio - Icae
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="companies">
+	<p class="title-large">EMPRESAS PARCEIRAS</p>
+
+	<div class="carousel carousel-animated carousel-animate-slide" data-size="3" data-autoplay="true" data-delay="3500">
+		<div class="carousel-container has-text-centered">
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Carlos Adriano Metzner & Cia Ltda Me</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Coppini & Cia Ltda</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Digitaldoc Software Ltda - Me</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Eng Logica Equipamentos Ltda</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Grupo Atenas Softwares Ltda - Me</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Jl Informatica Ltda Me</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Kehl E Remussi Ltda Me</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Santa Gemma Alimentos Ltda</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Setadigital Sistemas Gerenciais Ltda</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Swa Sistemas Acadêmicos Ltda-Me</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Itaipu Binacional</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>UTFPR - Universidade Tecnológica Federal Do Paraná - Santa Helena</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Município De Santa Helena</p>
+			</div>
+			<div class="carousel-item is-active carousel-link">
+				<a href="http://www.ese.ipb.pt/"><img src="/assets/img/logos/ipb.png" class="img-rounded" width="256" height="256"></a>
+				<p>Prefeitura Municipal De Diamante D'Oeste</p>
+			</div>
+		</div>
+	</div>
+</div>

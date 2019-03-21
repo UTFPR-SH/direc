@@ -1,0 +1,47 @@
+---
+layout: default
+title: {{ page.title }}
+---
+
+<link rel="stylesheet" type="text/css" href="/assets/css/event.css">
+
+<script type="text/javascript" src="/assets/js/masonry-4.2.2.min.js"></script>
+
+<section class="section container event-content">
+	<div class="columns">
+		<div class="column title">
+			{{ page.title }}
+			<div class="column is-pulled-right has-text-grey-light date">
+				{{ page.data }}
+			</div>
+		</div>
+	</div>
+
+
+	{{ content }}
+
+	<p class="title-large">Fotos do evento</p>
+	<p class="has-text-grey-light"><span style="border-radius: 3px; background: rgb(240, 240, 240); padding: 5px; padding-left: 10px; padding-right: 10px;"><i class="fas fa-info"></i></span> Clique nas fotos para visualizá-las em sua resolução real.</p>
+	<!-- data-masonry must be a valid JSON -->
+	{% if page.fotos %}
+	<div class="event-photo-wall gap-large-top">
+		{% for foto in page.fotos %}
+		<div class="event-photo">
+			<a href="{{ foto }}"><img src="{{ foto }}"></a>
+		</div>
+		{% endfor %}
+	</div>
+	{% else %}
+	<div class="has-text-centered title-medium notification is-danger gap-medium-top" style="padding: 10%">
+		Nenhuma foto disponível <br>
+		<i class="fas fa-camera fa-2x fa-fw"></i>
+	</div>
+	{% endif %}
+</section>
+
+<script type="text/javascript">
+	var msnry = new Masonry('.event-photo-wall', {
+		itemSelector: '.event-photo',
+		fitWidth: true
+	})
+</script>

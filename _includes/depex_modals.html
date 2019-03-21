@@ -1,0 +1,113 @@
+<div class="modal" id="mmodal-voluntario">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header id="header" class="modal-card-head">
+      <p class="modal-card-title">Quer se tornar um aluno voluntário?</p>
+      <button class="delete has-background-danger"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <p class="text" style="text-align: justify;">
+        Para se tornar aluno voluntário de um projeto de extensão basta escolher o projeto em vigência abaixo e mandar um email ao professor com os detalhes concernentes ao seu interesse. Procure responder, no email, o porquê você escolheu este projeto ;-)
+      </p>
+
+      <div class="modal-posts gap-medium-top" style="height: 300px;" data-simplebar data-simplebar-auto-hide="false">
+        <ul style="padding: 15px">
+          <li class="columns has-text-centered text-computer">
+            <strong class="column">Nome do projeto</strong>
+            <strong class="column">Contato</strong>
+          </li>
+          {% for element in site.posts %}
+          {% if element.status == 'em andamento' %}
+          <li class="columns has-text-centered">
+            <span class="column">
+              <a href="{{ element.url }}" class="is-link">{{ element.title }}</a>
+            </span>
+            <span class="column">
+              <a href="mailto:{{ element.email }}" class="button is-link is-outlined">Contatar o coordenador</a>
+            </span>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <footer class="modal-card-foot">
+
+    </footer>
+  </div>
+</div>
+
+<div class="modal" id="mmodal-bolsista">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header id="header" class="modal-card-head">
+      <p class="modal-card-title">Quer se tornar um aluno bolsista?</p>
+      <button class="delete has-background-danger"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <p class="text">
+        A oferta de bolsas ocorre em períodos determinados durante o ano e 
+        através destas ofertas o projeto pode ser contemplado com uma bolsa para 
+        um aluno.
+      </p> 
+
+      <p class="text">
+        Para os projetos concorrerem bolsas o coordenador do projeto deverá 
+        submete-lo ao edital em data específica.
+      </p>
+
+      <p class="text">
+        Projetos em andamento sem alunos bolsistas ou projetos em fase de 
+        proposta podem concorrer a bolsas e portanto para se tornar um aluno 
+        bolsista procure a guia de propostas de projetos ou os projetos em 
+        andamento na página e entre em contato com o seu respectivo coordenador 
+        para demonstrar seu interesse.
+      </p>
+    </section>
+
+    <footer class="modal-card-foot">
+    </footer>
+  </div>
+</div>
+
+<div class="modal" id="mmodal-extensao">
+  <div class="modal-background is-primary"></div>
+  <div class="modal-card">
+    <header id="header" class="modal-card-head">
+      <p class="modal-card-title">Propostas de Extensão</p>
+      <button class="delete has-background-danger"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <p>
+        Abaixo você encontrará a áreas de interesse de cada docente do campus Santa Helena. Se alguma área corresponder a sua ideia, mande um email ao professor e ele retornará o contato! ;-)
+      </p>
+
+      <div class="gap-medium-top" style="overflow-y: scroll; overflow-x: hidden; height: 200px;">
+        <!-- Informations sent over a websocket probably.  -->
+        <div id="">
+        <p class="title-medium bold"><i class="fas fa-book fa-fw"></i> Ciência da Computação</p>
+        </div>
+        <div id="">
+        <p class="title-medium bold"><i class="fas fa-book fa-fw"></i> Ciências Biológicas</p>
+        </div>
+        <div id="">
+        <p class="title-medium bold"><i class="fas fa-book fa-fw"></i> Agronomia</p>
+        </div>
+      </div>
+
+      <p>
+        Se você não encontrou uma área que corresponda aos seus interesses, mada um email pra gente! Colocaremos a ideia à mostra no campus e encontraremos alguém perfeito para desenvolvê-la junto você.
+      </p>
+    </section>
+
+    <footer class="modal-card-foot">
+      <a href="mailto:direc-sh@utfpr.edu.br?subject=Demandas de projetos" title="Entre em contato" class="button is-warning" >
+      Converse conosco
+    </a>
+    </footer>
+  </div>
+</div>

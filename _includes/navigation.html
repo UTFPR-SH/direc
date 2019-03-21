@@ -1,0 +1,25 @@
+<nav class="navbar is-spaced has-text-weight-light" role="navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="#" id="logo">
+        <img class="navbar-item" src="/assets/img/logos/direc.png" width="164" height="41">
+      </a>
+
+      <a role="button" class="navbar-burger" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="navbar-menu">
+      {% for link in site.navigation %}
+      <li><a href="{{ link.url }}" class="navbar-item">{{ link.text }}</a></li>
+      {% endfor %}
+
+      <div class="navbar-end">
+        <li><a href="/login.html" class="button is-info">LOGIN</a></li>
+      </div>
+    </ul>
+  </div>
+</nav>

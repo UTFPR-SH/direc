@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>DEPEX</title>
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/fonts/all.min.css">
+  <!-- The theme of the website -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
+
+  <!-- Change the default scrollbar -->
+  <link rel="stylesheet" href="/assets/css/simplebar.css" />
+  <script src="/assets/js/simplebar.js"></script>
+
+  <script type="text/javascript" src="/assets/js/navigation.js"></script>
+</head>
+<body>
+	<nav class="navbar is-spaced has-text-weight-light" role="navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="#" id="logo">
+        <img class="navbar-item" src="/assets/img/logos/direc.png" width="164" height="41">
+      </a>
+
+      <a role="button" class="navbar-burger" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="navbar-menu">
+      
+      <li><a href="/index" class="navbar-item">início</a></li>
+      
+      <li><a href="/depex" class="navbar-item">depex</a></li>
+      
+      <li><a href="/depet" class="navbar-item">depet</a></li>
+      
+      <li><a href="/depec" class="navbar-item">depec</a></li>
+      
+      <li><a href="/derint" class="navbar-item">derint</a></li>
+      
+      <li><a href="/oportunities" class="navbar-item">oportunidades</a></li>
+      
+
+      <div class="navbar-end">
+        <li><a href="/login.html" class="button is-info">LOGIN</a></li>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+  <section class="container">
+    <link rel="stylesheet" type="text/css" href="/assets/css/depex.css">
+
+<script src="/assets/js/modals.js" type="text/javascript" charset="utf-8" async defer></script>
+<script type="text/javascript" async>
+  window.onload = (event) => {
+    bindModals(['modal-bolsista', 'modal-voluntario', 'modal-extensao'])
+  }
+</script>
+
+<div class="modal" id="mmodal-voluntario">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header id="header" class="modal-card-head">
+      <p class="modal-card-title">Quer se tornar um aluno voluntário?</p>
+      <button class="delete has-background-danger"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <p class="text" style="text-align: justify;">
+        Para se tornar aluno voluntário de um projeto de extensão basta escolher o projeto em vigência abaixo e mandar um email ao professor com os detalhes concernentes ao seu interesse. Procure responder, no email, o porquê você escolheu este projeto ;-)
+      </p>
+
+      <div class="modal-posts gap-medium-top" style="height: 300px;" data-simplebar data-simplebar-auto-hide="false">
+        <ul style="padding: 15px">
+          <li class="columns has-text-centered text-computer">
+            <strong class="column">Nome do projeto</strong>
+            <strong class="column">Contato</strong>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li class="columns has-text-centered">
+            <span class="column">
+              <a href="/2018/09/04/redes-ii.html" class="is-link">Redes de Computadores II</a>
+            </span>
+            <span class="column">
+              <a href="mailto:euclidesjunior@utfpr.edu.br" class="button is-link is-outlined">Contatar o coordenador</a>
+            </span>
+          </li>
+          
+          
+          
+          <li class="columns has-text-centered">
+            <span class="column">
+              <a href="/2018/08/20/computacao-grafica.html" class="is-link">Computação Gráfica</a>
+            </span>
+            <span class="column">
+              <a href="mailto:arletebeuren@utfpr.edu.br" class="button is-link is-outlined">Contatar o coordenador</a>
+            </span>
+          </li>
+          
+          
+          
+          
+          
+          <li class="columns has-text-centered">
+            <span class="column">
+              <a href="/2018/08/07/um-computador-inteligente.html" class="is-link">Um computador inteligente</a>
+            </span>
+            <span class="column">
+              <a href="mailto:naves@utfpr.edu.br" class="button is-link is-outlined">Contatar o coordenador</a>
+            </span>
+          </li>
+          
+          
+          
+          <li class="columns has-text-centered">
+            <span class="column">
+              <a href="/2018/07/11/redes-de-computadores.html" class="is-link">Redes de Computadores I</a>
+            </span>
+            <span class="column">
+              <a href="mailto:euclidesjunior@utfpr.edu.br" class="button is-link is-outlined">Contatar o coordenador</a>
+            </span>
+          </li>
+          
+          
+          
+          <li class="columns has-text-centered">
+            <span class="column">
+              <a href="/2018/07/11/exemplo.html" class="is-link">Formação e Distribuição de Mudas de Espécies Frutíferas na Região Oeste do Paraná</a>
+            </span>
+            <span class="column">
+              <a href="mailto:euclides@utfpr.edu.br" class="button is-link is-outlined">Contatar o coordenador</a>
+            </span>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </section>
+
+    <footer class="modal-card-foot">
+
+    </footer>
+  </div>
+</div>
+
+<div class="modal" id="mmodal-bolsista">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header id="header" class="modal-card-head">
+      <p class="modal-card-title">Quer se tornar um aluno bolsista?</p>
+      <button class="delete has-background-danger"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <p class="text">
+        A oferta de bolsas ocorre em períodos determinados durante o ano e 
+        através destas ofertas o projeto pode ser contemplado com uma bolsa para 
+        um aluno.
+      </p> 
+
+      <p class="text">
+        Para os projetos concorrerem bolsas o coordenador do projeto deverá 
+        submete-lo ao edital em data específica.
+      </p>
+
+      <p class="text">
+        Projetos em andamento sem alunos bolsistas ou projetos em fase de 
+        proposta podem concorrer a bolsas e portanto para se tornar um aluno 
+        bolsista procure a guia de propostas de projetos ou os projetos em 
+        andamento na página e entre em contato com o seu respectivo coordenador 
+        para demonstrar seu interesse.
+      </p>
+    </section>
+
+    <footer class="modal-card-foot">
+    </footer>
+  </div>
+</div>
+
+<div class="modal" id="mmodal-extensao">
+  <div class="modal-background is-primary"></div>
+  <div class="modal-card">
+    <header id="header" class="modal-card-head">
+      <p class="modal-card-title">Propostas de Extensão</p>
+      <button class="delete has-background-danger"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <p>
+        Abaixo você encontrará a áreas de interesse de cada docente do campus Santa Helena. Se alguma área corresponder a sua ideia, mande um email ao professor e ele retornará o contato! ;-)
+      </p>
+
+      <div class="gap-medium-top" style="overflow-y: scroll; overflow-x: hidden; height: 200px;">
+        <!-- Informations sent over a websocket probably.  -->
+        <div id="">
+        <p class="title-medium bold"><i class="fas fa-book fa-fw"></i> Ciência da Computação</p>
+        </div>
+        <div id="">
+        <p class="title-medium bold"><i class="fas fa-book fa-fw"></i> Ciências Biológicas</p>
+        </div>
+        <div id="">
+        <p class="title-medium bold"><i class="fas fa-book fa-fw"></i> Agronomia</p>
+        </div>
+      </div>
+
+      <p>
+        Se você não encontrou uma área que corresponda aos seus interesses, mada um email pra gente! Colocaremos a ideia à mostra no campus e encontraremos alguém perfeito para desenvolvê-la junto você.
+      </p>
+    </section>
+
+    <footer class="modal-card-foot">
+      <a href="mailto:direc-sh@utfpr.edu.br?subject=Demandas de projetos" title="Entre em contato" class="button is-warning" >
+      Converse conosco
+    </a>
+    </footer>
+  </div>
+</div>
+
+<div class="columns">
+  <div class="column">
+    <p class="title-large title-computer">DEPEX - Departamento de Extensão</p>
+    <div class="has-text-centered title-mobile">
+      <p class="title-large">DEPEX</p>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="tile is-parent">
+            <div id="modal-voluntario" class="tile is-child notification rainbow-black is-link">
+              <div class="content">
+                <p class="title">Aluno voluntário</p>
+                <p>Instruções para alunos que desejam ser voluntários em projetos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div id="modal-bolsista" class="tile is-child notification rainbow-black is-link">
+              <div class="content">
+                <p class="title">Aluno bolsista</p>
+                <p>Instruções para alunos que desejam ser bolsistas em projetos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <div id="modal-extensao" class="tile is-child notification rainbow-black is-link">
+            <div class="content">
+              <p class="title">Sociedade, fale conosco!</p>
+              <p>Demandas e ofertas de ações de extensão para sociedade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text">
+      Segundo o Fórum Nacional de Pró-Reitores de Extensão das Universidades Públicas Brasileiras (1987), a extensão universitária é definida como “um processo educativo, cultural e científico que se articula ao ensino e a pesquisa de forma indissociável e viabiliza a relação transformadora entre a Universidade e a Sociedade”.
+    </p>
+
+    <p class="text">
+      O Departamento de Extensão, que faz parte da Diretoria de Relações Empresariais e Comunitárias, é o órgão responsável por monitorar e assessorar as ações de extensão dentro da Câmpus da UTFPR, de forma a:
+    </p>
+
+    <div class="content">
+      <ul>
+        <li>Aplicar a normatização das ações e políticas de extensão, viabilizando sua execução;</li>
+        <li>Orientar, sugerir e direcionar as ações de extensão, visando a otimização dos resultados;</li>
+        <li>Supervisionar, coordenar, acompanhar e avaliar as ações de extensão;</li>
+        <li>Prospectar mecanismos de fomento visando incremento das atividades de extensão;</li>
+        <li>Incentivar e apoiar a participação na submissão de projetos para editais de órgãos de fomento às ações de extensão universitária;</li>
+        <li>Registrar as ações, proporcionando uma visibilidade da atuação extensionista da UTFPR;</li>
+        <li>Divulgar as ações, concretizando o compromisso social da UTFPR.</li>
+      </ul>
+
+      <p>O Departamento de Extensão é composto por quatro núcleos, que atendem áreas temáticas específicas:</p>
+
+      <ul>
+        <li>Núcleo de Saúde e Meio Ambiente;</li>
+        <li>Núcleo de Cultura e Comunicação;</li>
+        <li>Núcleo de Educação e Direitos Humanos;</li>
+        <li>Núcleo de Trabalho, Tecnologia e Produção.</li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <div class="column depex-posts">
+        <div class="depex-posts-header">
+          <p class="title-large has-border-bottom">Projetos de Extensão</p>
+        </div>
+        <div class="depex-posts-content">
+          <ul style="height: 700px;" data-simplebar data-simplebar-auto-hide="false">
+            
+            
+            
+            
+            
+            
+            <li>
+              <div class="">
+                <article class="media" style="padding: 15px;">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="/assets/img/professors/euclides.jpg" alt="Foto do professor" id="post-picture">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <strong id="post-title">Redes de Computadores II</strong>
+                        </div>
+                        <div class="column">
+                          
+                          <div class="is-pulled-right field is-grouped" title="Vigente até">
+                            <div class="tags has-addons" id="post-tag">
+                              <span class="tag is-info">Projeto em andamento</span>
+                              <span class="tag is-dark">11/07/2018 - 11/07/2019</span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified" id="post-resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <nav class="navbar is-mobile">
+                      <div class="level-right">
+                        <a href="/2018/09/04/redes-ii.html" title="Redes de Computadores II" class="button is-info">
+                          VISUALIZAR PROJETO
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <br>
+            
+            
+            
+            <li>
+              <div class="">
+                <article class="media" style="padding: 15px;">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="/assets/img/professors/arlete.jpg" alt="Foto do professor" id="post-picture">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <strong id="post-title">Computação Gráfica</strong>
+                        </div>
+                        <div class="column">
+                          
+                          <div class="is-pulled-right field is-grouped" title="Vigente até">
+                            <div class="tags has-addons" id="post-tag">
+                              <span class="tag is-info">Projeto em andamento</span>
+                              <span class="tag is-dark">11/07/2018 - 11/07/2019</span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified" id="post-resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <nav class="navbar is-mobile">
+                      <div class="level-right">
+                        <a href="/2018/08/20/computacao-grafica.html" title="Computação Gráfica" class="button is-info">
+                          VISUALIZAR PROJETO
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <br>
+            
+            
+            
+            <li>
+              <div class="">
+                <article class="media" style="padding: 15px;">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="/assets/img/professors/itamar.jpg" alt="Foto do professor" id="post-picture">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <strong id="post-title">Descarte de Lixo Eletrônico</strong>
+                        </div>
+                        <div class="column">
+                          
+                          <span class="tag is-success is-pulled-right" id="post-tag">Projeto concluído</span>
+                          
+                        </div>
+                      </div>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified" id="post-resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <nav class="navbar is-mobile">
+                      <div class="level-right">
+                        <a href="/2018/08/09/descarte-lixo-eletronico.html" title="Descarte de Lixo Eletrônico" class="button is-info">
+                          VISUALIZAR PROJETO
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <br>
+            
+            
+            
+            <li>
+              <div class="">
+                <article class="media" style="padding: 15px;">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="/assets/img/professors/thiago.jpg" alt="Foto do professor" id="post-picture">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <strong id="post-title">Um computador inteligente</strong>
+                        </div>
+                        <div class="column">
+                          
+                          <div class="is-pulled-right field is-grouped" title="Vigente até">
+                            <div class="tags has-addons" id="post-tag">
+                              <span class="tag is-info">Projeto em andamento</span>
+                              <span class="tag is-dark">01/08/2018 - 01/08/2019</span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified" id="post-resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <nav class="navbar is-mobile">
+                      <div class="level-right">
+                        <a href="/2018/08/07/um-computador-inteligente.html" title="Um computador inteligente" class="button is-info">
+                          VISUALIZAR PROJETO
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <br>
+            
+            
+            
+            <li>
+              <div class="">
+                <article class="media" style="padding: 15px;">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="/assets/img/professors/euclides.jpg" alt="Foto do professor" id="post-picture">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <strong id="post-title">Redes de Computadores I</strong>
+                        </div>
+                        <div class="column">
+                          
+                          <div class="is-pulled-right field is-grouped" title="Vigente até">
+                            <div class="tags has-addons" id="post-tag">
+                              <span class="tag is-info">Projeto em andamento</span>
+                              <span class="tag is-dark">11/07/2018 - 11/07/2019</span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified" id="post-resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <nav class="navbar is-mobile">
+                      <div class="level-right">
+                        <a href="/2018/07/11/redes-de-computadores.html" title="Redes de Computadores I" class="button is-info">
+                          VISUALIZAR PROJETO
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <br>
+            
+            
+            
+            <li>
+              <div class="">
+                <article class="media" style="padding: 15px;">
+                  <div class="media-left">
+                    <figure class="image is-96x96">
+                      <img src="/assets/img/professors/magnos.jpg" alt="Foto do professor" id="post-picture">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <div class="columns">
+                        <div class="column">
+                          <strong id="post-title">Formação e Distribuição de Mudas de Espécies Frutíferas na Região Oeste do Paraná</strong>
+                        </div>
+                        <div class="column">
+                          
+                          <div class="is-pulled-right field is-grouped" title="Vigente até">
+                            <div class="tags has-addons" id="post-tag">
+                              <span class="tag is-info">Projeto em andamento</span>
+                              <span class="tag is-dark">11/07/2018 - 11/07/2019</span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified" id="post-resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <nav class="navbar is-mobile">
+                      <div class="level-right">
+                        <a href="/2018/07/11/exemplo.html" title="Formação e Distribuição de Mudas de Espécies Frutíferas na Região Oeste do Paraná" class="button is-info">
+                          VISUALIZAR PROJETO
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </li>
+            <br>
+            
+            
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="column">
+        <p class="title-medium">Filtros</p><br>
+
+
+      </div> -->
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <footer class="footer is-primary" id="site-footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column" id="footer-name">
+        <strong class="title-medium-inverted">Diretoria de Relações Empresariais e Comunitárias</strong><br> 
+        <ul class="gap-small-top">
+          <li><a href="https://github.com/utfpr-sh/portal-direc/issues/new">
+            <span class="icon"><i class="fas fa-bug fa-fw"></i></span>Encontrou algum bug?</a>
+          </li>
+          <li><a href="mailto:direc-sh@utpfr.edu.br?body="><span class="icon"><i class="fas fa-envelope fa-fw"></i></span>Fale conosco</a></li>
+          <li><a href="https://github.com/utfpr-sh"><span class="icon"><i class="fab fa-github-alt fa-fw"></i></span>Contribua</a></li>
+        </ul>
+      </div>
+      <div class="column has-text-centered" id="footer-address">
+        <span class="icon"><i class="fas fa-map-marked-alt fa-2x"></i></span><br>
+        Prolongamento da Rua Cerejeira, s/n CEP 85892-000. <br> Telefone Geral +55 (45) 3268-8800
+        <figure class="gap-medium-top" id="footer-logo">
+          <img src="/assets/img/logos/utfpr_white.png" width="269" height="99">
+        </figure>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="/assets/js/jquery-3.3.1.slim.js"></script>
+</body>
+</html>

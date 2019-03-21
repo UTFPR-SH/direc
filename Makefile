@@ -1,5 +1,3 @@
-INPUT_FOLDER=./html
-OUTPUT_FOLDER=./html/_site
 DOCKER ?= OFF # If set to ON jekyll container is used to build and serve
 JEKYLL = jekyll
 
@@ -8,13 +6,13 @@ ifeq (${DOCKER},ON)
 endif
 
 all:
-	$(JEKYLL) build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER)
+	$(JEKYLL) build
 
 regenerative:
-	$(JEKYLL) build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+	$(JEKYLL) build --watch
 
 deploy:
-	$(JEKYLL) serve --host=0.0.0.0 build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+	$(JEKYLL) serve --host=0.0.0.0 build --watch
 
 serve:
-	$(JEKYLL) serve build -s $(INPUT_FOLDER) -d $(OUTPUT_FOLDER) --watch
+	$(JEKYLL) serve build --watch

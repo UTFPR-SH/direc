@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Eventos</title>
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/fonts/all.min.css">
+  <!-- The theme of the website -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
+
+  <!-- Change the default scrollbar -->
+  <link rel="stylesheet" href="/assets/css/simplebar.css" />
+  <script src="/assets/js/simplebar.js"></script>
+
+  <script type="text/javascript" src="/assets/js/navigation.js"></script>
+</head>
+<body>
+  <nav class="navbar is-spaced has-text-weight-light" role="navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="#" id="logo">
+        <img class="navbar-item" src="/assets/img/logos/direc.png" width="164" height="41">
+      </a>
+
+      <a role="button" class="navbar-burger" data-target="nav-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="navbar-menu">
+      
+      <li><a href="/internal" class="navbar-item">início</a></li>
+      
+      <li><a href="/internal/extension" class="navbar-item">extensão</a></li>
+      
+      <li><a href="/internal/events" class="navbar-item">eventos</a></li>
+      
+      <li><a href="/internal/users" class="navbar-item">usuários</a></li>
+      
+      <li><a href="/internal/help" class="navbar-item">ajuda</a></li>
+      
+
+      <div class="navbar-end has-text-white-ter">
+        <li><a href="/logout" class="button is-info">LOGOUT</a></li>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+  <section class="container">
+    <style type="text/css">
+@media screen and (min-width: 1000px) {
+	#users {
+		height: 30vw;
+	}
+}
+
+#users {
+	overflow-y: scroll;
+}
+
+#actions {
+	text-align: center;
+}
+</style>
+
+<p class="title gap-medium-top">Eventos cadastrados no sistema</p>
+
+<p class="text">Bem vindo à página de eventos, você pode criar eventos, editá-los ou removê-los utilizando os botões na coluna de ações da tabela abaixo. Qualquer dúvida é só clicar <a href="/internal/help#events">aqui</a>.</p>
+
+<div id="events">
+	<table class="table is-fullwidth is-bordered is-hoverable gap-small-top">
+		<thead>
+			<tr>
+				<th>Título do evento</th>
+				<th>Ações</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+			
+			<tr>
+				<td>ExpoUTF</td>
+				<td id="actions" class="has-text-centered">
+					<div class="buttons has-addons">
+						<span class="button is-info is-outlined" title="Editar"><span style="margin-right: 5px;"><i class="fas fa-edit"></i></span></span>
+						<span class="button is-danger is-outlined" title="Remover"><span style="margin-right: 5px;"><i class="fas fa-eraser"></i></span></span>
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td>Desfile Cívico 2018</td>
+				<td id="actions" class="has-text-centered">
+					<div class="buttons has-addons">
+						<span class="button is-info is-outlined" title="Editar"><span style="margin-right: 5px;"><i class="fas fa-edit"></i></span></span>
+						<span class="button is-danger is-outlined" title="Remover"><span style="margin-right: 5px;"><i class="fas fa-eraser"></i></span></span>
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tbody>
+	</table>
+</div>
+
+<div class="has-text-right gap-medium-top">
+	<button class="button is-success"><span style="margin-right: 5px;">
+		<i class="fa fas fa-plus"></i></span>Adicionar evento
+	</button>
+</div>
+  </section>
+
+  <footer class="footer is-primary" id="site-footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column" id="footer-name">
+        <strong class="title-medium-inverted">Diretoria de Relações Empresariais e Comunitárias</strong><br> 
+        <ul class="gap-small-top">
+          <li><a href="https://github.com/utfpr-sh/portal-direc/issues/new">
+            <span class="icon"><i class="fas fa-bug fa-fw"></i></span>Encontrou algum bug?</a>
+          </li>
+          <li><a href="mailto:direc-sh@utpfr.edu.br?body="><span class="icon"><i class="fas fa-envelope fa-fw"></i></span>Fale conosco</a></li>
+          <li><a href="https://github.com/utfpr-sh"><span class="icon"><i class="fab fa-github-alt fa-fw"></i></span>Contribua</a></li>
+        </ul>
+      </div>
+      <div class="column has-text-centered" id="footer-address">
+        <span class="icon"><i class="fas fa-map-marked-alt fa-2x"></i></span><br>
+        Prolongamento da Rua Cerejeira, s/n CEP 85892-000. <br> Telefone Geral +55 (45) 3268-8800
+        <figure class="gap-medium-top" id="footer-logo">
+          <img src="/assets/img/logos/utfpr_white.png" width="269" height="99">
+        </figure>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="/assets/js/jquery-3.3.1.slim.js"></script>
+</body>
+</html>

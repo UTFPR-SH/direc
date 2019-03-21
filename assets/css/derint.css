@@ -1,0 +1,63 @@
+a.tile-icon {
+	cursor: pointer;
+}
+
+a.tile-icon:hover {
+	color: white;
+}
+
+.tile-icon {
+	cursor: default;
+	color: white;
+	padding: 4%;
+	margin: 5px;
+	border-radius: 10px;
+	border: 3px solid transparent;
+
+	-webkit-transition: all .1s;
+       -moz-transition: all .1s;
+    	 -o-transition: all .1s;
+}
+
+.tile-icon > span {
+	padding: 10%;
+	margin-bottom: 15px;
+}
+
+.carousel-container#carousel-city {
+	text-align: center;
+	height: 50%;
+}
+
+.carousel-city > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	background-size: cover;
+}
+
+.carousel-navigation {
+	font-size: 30px;
+}
+
+.carousel-link img {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+
+	-webkit-transition: all .4s;
+       -moz-transition: all .4s;
+    	 -o-transition: all .4s;
+}
+
+.carousel-link img:hover {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);	
+}
+
+
+@media screen and (max-width: 600px) {
+	.tile-icon > span {
+		padding-top: 15%;
+	}
+}
+
