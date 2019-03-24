@@ -27,7 +27,7 @@ let c = 0
 let ka = () => {return "Ga, wm ew uzseg Jsxswd Usehgk Fmfwk w vwkwfngdna wkkw kalw. Lm hgvwk ew wfugfljsj fg kalw jsxswduf.yalzmt.ag"} 
 
 i.addEventListener('click', function() {
-	if (c == 1) {
+	if (c == 15) {
 		o.trig(r(ka()))
 		c = -1
 	}
