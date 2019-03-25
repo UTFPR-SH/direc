@@ -1,13 +1,18 @@
 'use strict'
 
+/**
+ * Bind all the modals defined by modals
+ * @param {modals} An array of modals ids triggers in which their correspondent m+modals will be the modal itself.
+ */
 function bindModals(modals) {
     modals.map((m) => {
         document.getElementById(m).onclick = event => {
-            var modal = document.getElementById('m' + m)
+            let modal = document.getElementById('m' + m)
             modal.classList.add("is-active")
 
             modal.onclick = (event) => {
                 if (event.target == modal.querySelector('.modal-background')) {
+                    modal.classList.add('is-inactive')
                     modal.classList.remove('is-active')
                 }
             }
@@ -18,8 +23,10 @@ function bindModals(modals) {
 
     for (var i = 0; i < dbutton.length; i++) {
         dbutton[i].onclick = event => {
-            modals.forEach((e) => {
-                document.getElementById('m' + e).classList.remove('is-active')
+            modals.forEach((m) => {
+                let modal = document.getElementById('m' + m)
+                modal.classList.add('is-inactive')
+                modal.classList.remove('is-active')
             })
         }
     }
