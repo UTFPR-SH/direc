@@ -42,7 +42,7 @@ title: Início
       </div>
       
       <div id="noticias-projetos">
-        <p class="title-large">PROJETOS DE EXTENSÃO</p>
+        <p class="title-large gap-large-top">PROJETOS DE EXTENSÃO</p>
         <p class="text">Veja os últimos projetos de extensão que estão em execução. Para ter uma visão geral de todos os projetos acesse a página do  <a href="/depex">DEPEX</a>.</p>
 
         <div class="container">
@@ -66,12 +66,12 @@ title: Início
                         </div>
                         <div class="media-content">
                           <p class="title-medium-inverted" style="margin-bottom: 0 !important">{{ site.posts[i].professor }}</p>
-                          <p class="has-text-info">{{ site.posts[i].title }}</p>
+                          <p class="has-text-info">{{ site.posts[i].title | truncatewords: 3}}</p>
                         </div>
                       </div>
 
                       <div class="content text-computer">
-                        <p class="has-text-grey-lighter">Resumo {{ site.posts[i].tag }} </p>
+                        <p class="has-text-grey-lighter">Resumo {{ site.posts[i].tag }}</p>
                         {{ site.posts[i].snippet | truncatewords: 20}}<span class="has-text-info"> leia mais.</span>
                       </div>
                     </div>
@@ -92,7 +92,7 @@ title: Início
                         </div>
                         <div class="media-content">
                           <p class="title-medium-inverted" style="margin-bottom: 0 !important">{{ site.posts[i].professor }}</p>
-                          <p class="has-text-info">{{ site.posts[i].title}}</p>
+                          <p class="has-text-info">{{ site.posts[i].title | truncatewords: 3}}</p>
                         </div>
                       </div>
 

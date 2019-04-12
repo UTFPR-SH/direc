@@ -20,12 +20,15 @@ section {
 </style>
 
 <div class="form-login">
-	<b>Login para administradores do sistema</b><br><br>
+	<div class="columns">
+		<div class="column"><b>Login</b></div>
+		<div class="column" style="text-align: right;"><a href="#" class="" style="font-size: 12px;border-bottom:1px solid #ccc;color: #ccc">Esqueci a senha</a></div>
+	</div>
 
-	<form class="form has-text-right" method="post" id="form-login">
+	<form class="form has-text-right" method="post" id="form-login" action="/auth">
 		<div class="field">
 			<p class="control has-icons-left">
-				<input class="input" type="text" placeholder="Usuário" name="username" required>
+				<input class="input" type="text" placeholder="Usuário" name="username" autocomplete="off" required>
 				<span class="icon is-small is-left">
 					<i class="fas fa-user"></i>
 				</span>
@@ -34,21 +37,21 @@ section {
 
 		<div class="field">
 			<p class="control has-icons-left">
-				<input class="input" type="password" placeholder="Senha" name="password" required>
+				<input class="input" type="password" placeholder="Senha" name="password" autocomplete="off" required>
 				<span class="icon is-small is-left">
 					<i class="fas fa-lock"></i>
 				</span>
 			</p>
 		</div>
 
-		<div class="field" id="error-message" hidden>
-			<label class="has-text-danger control">Usuário ou senha incorretos</label>
+		<div class="field has-text-center" id="error-message" style="background: rgb(230, 100, 100); padding: 2%;color: rgb(100, 0, 0);border-radius: 3px;" hidden>
+			<label class="control">usuário ou senha incorretos</label>
 		</div>
 	</form>
 
 	<!-- Button placed outside the form for while to not dispatch any event of the form -->
 	<div class="has-text-right gap-small-top">
-		<button class="button is-success" name="button-login">
+		<button class="button is-success" name="button-login" disabled>
 			<span style="margin-right: 5px;" id="spin" hidden><i class="fa fas fa-circle-notch fa-spin"></i></span>Entrar
 		</button>
 	</div>

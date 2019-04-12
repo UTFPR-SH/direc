@@ -1,3 +1,3 @@
 # Unnecessary folders
 .sass-cache/**
-html/_site/**
+_site/**

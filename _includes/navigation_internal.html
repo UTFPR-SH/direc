@@ -13,12 +13,12 @@
     </div>
 
     <ul id="nav-menu" class="navbar-menu">
-      {% for link in site.navigation %}
+      {% for link in site.navinternal %}
       <li><a href="{{ link.url }}" class="navbar-item">{{ link.text }}</a></li>
       {% endfor %}
 
-      <div class="navbar-end">
-        <li><a href="/login.html" class="button is-info">LOGIN</a></li>
+      <div class="navbar-end has-text-white-ter">
+        <li><a href="/logout" class="button is-info">LOGOUT</a></li>
       </div>
     </ul>
   </div>

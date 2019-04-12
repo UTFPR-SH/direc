@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: sector
 title: DEPEX
+worker: ['Vitor Marchi']
+contact: ['vmarchi@utfpr.edu.br',]
+picture: []
 ---
 
 <link rel="stylesheet" type="text/css" href="/assets/css/depex.css">
 
-<script src="/assets/js/modals.js" type="text/javascript" charset="utf-8" async defer></script>
 <script type="text/javascript" async>
   window.onload = (event) => {
     bindModals(['modal-bolsista', 'modal-voluntario', 'modal-extensao'])
@@ -95,14 +97,14 @@ title: DEPEX
                 <article class="media" style="padding: 15px;">
                   <div class="media-left">
                     <figure class="image is-96x96">
-                      <img src="{{ element.picture }}" alt="Foto do professor" id="post-picture">
+                      <img src="{{ element.picture }}" alt="Foto do professor" class="post-picture">
                     </figure>
                   </div>
                   <div class="media-content">
                     <div class="content">
                       <div class="columns">
                         <div class="column">
-                          <strong id="post-title">{{ element.title }}</strong>
+                          <strong class="post-title">{{ element.title }}</strong>
                         </div>
                         <div class="column">
                           {% if element.status == 'Concluído' or element.status == 'concluído' %}
@@ -117,8 +119,8 @@ title: DEPEX
                           {% endif %}
                         </div>
                       </div>
-                      <span class="has-text-grey-lighter" id="post-resume-title">Resumo do projeto</span>
-                      <p class="has-text-justified" id="post-resume">{{ element.snippet }}</p>
+                      <span class="has-text-grey-lighter post-resume-title">Resumo do projeto</span>
+                      <p class="has-text-justified post-resume">{{ element.snippet }}</p>
                     </div>
                     <nav class="navbar is-mobile">
                       <div class="level-right">

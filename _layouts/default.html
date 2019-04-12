@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ page.title }}</title>
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/fonts/all.min.css">
+  <!-- The theme of the website -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/bulma-carousel.min.css">
+
+  <!-- Change the default scrollbar -->
+  <link rel="stylesheet" href="/assets/css/simplebar.css" />
+  <script src="/assets/js/simplebar.js"></script>
+
+  <script src="/assets/js/modals.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script type="text/javascript" src="/assets/js/bulma-carousel.min.js" async defer></script>
+  <script type="text/javascript" src="/assets/js/navigation.js" async defer></script>
+  <script type="text/javascript" src="/assets/js/eegg.js" async defer></script>
+</head>
+<body>
+	{% include navigation.html %}
+
+  <section class="container">
+    {{ content }}
+  </section>
+
+  {% include footer.html %}
+
+  <script src="/assets/js/jquery-3.3.1.slim.js"></script>
+</body>
+</html>
