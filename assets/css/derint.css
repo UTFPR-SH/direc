@@ -2,21 +2,20 @@ a.tile-icon {
 	cursor: pointer;
 }
 
-a.tile-icon:hover {
-	color: white;
+.tile {
+	margin: 5px;
+	padding: 4%;
+	border-radius: 10px;
 }
 
 .tile-icon {
 	cursor: default;
-	color: white;
-	padding: 4%;
-	margin: 5px;
-	border-radius: 10px;
+	background: rgb(240, 240, 240);
 	border: 3px solid transparent;
+}
 
-	-webkit-transition: all .1s;
-       -moz-transition: all .1s;
-    	 -o-transition: all .1s;
+.tile-icon-inversed {
+	color: rgb(30, 30, 30);
 }
 
 .tile-icon > span {
@@ -43,10 +42,6 @@ a.tile-icon:hover {
 .carousel-link img {
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
-
-	-webkit-transition: all .4s;
-       -moz-transition: all .4s;
-    	 -o-transition: all .4s;
 }
 
 .carousel-link img:hover {
