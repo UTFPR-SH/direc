@@ -47,24 +47,39 @@ footer#site-footer a:hover
 .navbar-brand > a#logo
     cursor: default
 
+.modal-card-foot 
+    justify-content: flex-end !important
+
 .input, .button, textarea
     -webkit-transition: all .1s ease-out
     -moz-transition: all .1s ease-out
     -o-transition: all .1s ease-out
 
 .input
-    box-shadow: 0 0 0 4px transparent !important
+    border: 2px solid $grey-lighter !important
+    box-shadow: 0 0 0 0px transparent !important
 
 .input:focus
-    border: 1px solid $grey !important
-    box-shadow: 0 0 0 4px $white-cle !important
+    border: 2px solid $grey !important
+
+.input
+    &.is-danger
+        border-color: $red-light !important
+    &.is-info
+        border-color: $blue !important
+
+.buttons
+    justify-content: center !important
+
+.button
+    &.is-yellow
+        color: rgb(30, 30, 30)
+        border: 0 
+        background: $yellow-darker !important
 
 @media screen and (min-width: 1088px)
     .navbar > .container .navbar-menu, .container > .navbar .navbar-menu
         margin-right: 0 !important
-
-.buttons
-    justify-content: center !important
 
 // Elements of the theme
 
@@ -86,6 +101,21 @@ p > a
 
 p > a:hover 
     color: rgb(10, 30, 250) !important
+
+input:not([type='submit']):focus::placeholder 
+    color: #999
+
+.animate
+    -webkit-transition: all .2s
+    -moz-transition: all .2s
+    -o-transition: all .2s
+    -transition: all .2s
+
+.animate-slow 
+    -webkit-transition: all .8s ease-in
+    -moz-transition: all .8s ease-in
+    -o-transition: all .8s ease-in
+    -transition: all .8s ease-in
 
 .title-small 
     font-size: 15px
@@ -169,46 +199,11 @@ p > a:hover
 .img-rounded
     border-radius: 50%
 
-.relief
-    -webkit-transition: all .1s ease-in 
-    -moz-transition: all .1s ease-in 
-    -o-transition: all .1s ease-in 
-
 .relief:hover
-    box-shadow: 0 0 3px 2px $grey-lighter
+    box-shadow: 0 0 0 4px $grey-lighter
 
 .has-image-center
     justify-content: center
-
-
-@media screen and (max-width: 1088px)
-    section 
-        padding: 2%
-
-    .navbar
-        background: rgb(255, 255, 255) !important
-    .navbar-item
-        color: rgb(30, 30, 30) !important
-
-    .navbar-item:hover
-        background: rgb(30, 30, 30) !important
-        color: rgb(255, 255, 255) !important 
-        border-bottom: 0 !important
-
-
-@media screen and (max-width: 600px) 
-    .title-computer,
-    .text-computer 
-        display: none
-
-    .title-mobile,
-    .text-mobile 
-        display: block
-
-
-@media screen and (min-width: 601px)
-    .title-mobile 
-        display: none
 
 // Carousel related style
 .carousel  
@@ -239,14 +234,26 @@ p > a:hover
         opacity: 0
     to 
         opacity: 1
+
+@keyframes fade-out
+    from 
+        opacity: 0
+    to 
+        opacity: 1
+
     
 .is-active
     animation-name: fade-in
-    animation-duration: .3s
+    animation-duration: .6s
+
+.is-inactive
+    animation-name: fade-out
+    animation-duration: .6s
 
 section
     animation-name: fade-in
-    animation-duration: .5s
+    animation-duration: .6s
 
-// including bulma
+
+@import "media"
 @import "bulma"
